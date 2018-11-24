@@ -1,0 +1,38 @@
+
+/*Creating modules to add left and right padding */
+.wrapper {
+	
+	overflow: hidden;
+	padding-left: 18px;
+	padding-right: 18px;
+	max-width: 1236px;  /*inc max-width by total left & right margins */
+	margin-left: auto;
+	margin-right: auto;
+
+	&--medium {
+		max-width: 976px;
+	}
+
+	/*wrapper within wrapper have padding = 0; override 
+	padding on top-level wrapper */
+
+	.wrapper {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+/*Include vertical space after image, depending on 
+width/size of browser */
+
+	&--b-margin {
+		margin-bottom: 1rem;
+
+		@mixin atSmall {
+		margin-bottom: 3.875rem;
+	}
+
+	}
+
+	
+
+}

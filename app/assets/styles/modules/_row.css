@@ -1,0 +1,59 @@
+.row {
+
+	@mixin clearfix;
+
+	&--gutters {
+		padding-right: -65px; 
+	}
+
+	/*Select all direct children of row--gutters, or all
+	the collumsS.*/
+
+	&--gutters > div {
+		padding-right: 65px;
+	}
+
+	/*when screen is very small, bottom-margin is 1rem;
+	when it increases to medium, the bottom-margin decreases 
+	to zero, as specified in rule atMedium */
+	
+
+	&__b-margin-until-medium {
+		margin-bottom: 1rem;
+			
+		}
+
+	@mixin atMedium {
+
+		&__b-margin-until-medium {
+			margin-bottom: 0;
+			
+		}
+
+		&__medium-4 {
+			float: left;
+			width: 33.33%;
+		}
+
+	/*Overwrite grid size to match design, creating more 
+	width for image */
+
+		&__medium-4--larger {
+			width: 37%;
+		}
+
+		&__medium-8 {
+			float: left;
+			width: 66.66%;
+		}	
+/*Overwrite grid size to match design, creating less 
+	width for text columns*/
+
+		&__medium-8--smaller {
+			width: 63%;
+
+		}	
+	}
+	
+	
+}

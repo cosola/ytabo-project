@@ -1,0 +1,25 @@
+
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #333;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* border-box ensure the width is measure inside the box 
+applied globally*/
+
+* {
+	box-sizing: border-box;
+}
+
+
+/*Set all links on page orange */
+a {
+	color: $mainOrange;
+	text-decoration: none;
+}
+
