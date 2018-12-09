@@ -1,4 +1,4 @@
-var path = require ('path');   //Path is part of node
+//var path = require ('path');   //Path is part of node
 
 module.export = {
 	entry: "./app/assets/scripts/App.js",
