@@ -6,6 +6,7 @@ var cssvars	 = require('postcss-simple-vars');
 var nested = require('postcss-nested');
 var cssImport = require('postcss-import');
 var mixins = require('postcss-mixins');
+var hexrgba = require('postcss-hexrgba');
 
 
 gulp.task('styles', function(){
